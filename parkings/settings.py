@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     # local
+    "parkings_api.apps.ParkingsApiConfig"
 ]
 
 REST_FRAMEWORK = {
