@@ -1,3 +1,12 @@
+# Created by https://www.toptal.com/developers/gitignore/api/django,react,python,visualstudiocode,node
+# Edit at https://www.toptal.com/developers/gitignore?templates=django,react,python,visualstudiocode,node
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
 db.sqlite3
 *.pyc
 .env
