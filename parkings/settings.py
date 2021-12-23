@@ -168,7 +168,9 @@ if app_route is not None:
 # to `mv staticfiles _static` so they can be served and set the route for that 
 # static site to `/static`. now your static files will be served separately.
 
-STATIC_URL = "/static/"
+
+STATIC_URL = 'api-static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 #STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
