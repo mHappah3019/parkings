@@ -8,7 +8,7 @@ COLOR_CHOICES = [
     ("YELLOW", "YELLOW"),
 ]
 
-class BikeRack(models.Model):
+class BikeRacks(models.Model):
     address = models.CharField(max_length=50, default="", unique=True)
     rating = models.IntegerField(default="", unique=False)
     school = models.CharField(max_length=50, default='', unique=False)
