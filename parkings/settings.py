@@ -6,17 +6,14 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-from pathlib import Path
-import os
-from urllib.parse import urlparse
-
-
-from django.core.management.utils import get_random_secret_key
-
-import environ
 import os
 import sys
+from pathlib import Path
+from urllib.parse import urlparse
+
 import dj_database_url
+import environ
+from django.core.management.utils import get_random_secret_key
 
 env = environ.Env()
 #reading .env file
@@ -145,7 +142,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Europe/Rome"
 
 USE_I18N = True
 

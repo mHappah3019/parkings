@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from rest_framework import generics, viewsets
-from .serializers import BikeRacksSerializer
+
 from .models import BikeRacks
+from .serializers import BikeRacksSerializer
 
 # Create your views here.    
 
