@@ -33,12 +33,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env("DJANGO_SECRET_KEY", default=get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env("DEBUG", default ="True")
+""" DEBUG = env("DEBUG", default ="False") """
+DEBUG=env("DEBUG", default=False)
 
 #TODO: fix
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", default="127.0.0.1,localhost").split(",")
 
-DEVELOPMENT_MODE = env("DEVELOPMENT_MODE", default="False")
+DEVELOPMENT_MODE = env("DEVELOPMENT_MODE", default='False')
 
 # Application definition
 
