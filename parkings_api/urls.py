@@ -4,6 +4,5 @@ from django.urls import path
 from .views import BikeRacksADDView, BikeRacksView
 
 urlpatterns = [
-    path('get-data/', BikeRacksView.as_view()),
-    path('add-data/', BikeRacksADDView.as_view())
+    path('get-data/', BikeRacksView.as_view())
 ]
